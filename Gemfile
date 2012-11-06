@@ -14,5 +14,6 @@ end
 gem 'jquery-rails'
 
 gem 'haml-rails', "~> 0.3.5"
+gem "twitter-bootstrap-rails", "~> 2.1.6"
 
 gem 'awesome_print'
