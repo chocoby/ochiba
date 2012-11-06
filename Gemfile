@@ -9,11 +9,12 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
   gem 'therubyracer', platforms: :ruby
+  gem "twitter-bootstrap-rails", "~> 2.1.6"
+  gem "less-rails", "~> 2.2.6"
 end
 
 gem 'jquery-rails'
 
 gem 'haml-rails', "~> 0.3.5"
-gem "twitter-bootstrap-rails", "~> 2.1.6"
 
 gem 'awesome_print'
