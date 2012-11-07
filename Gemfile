@@ -22,6 +22,7 @@ group :development, :test do
   gem 'growl-rspec', "~> 0.0.1"
   gem 'database_cleaner', "~> 0.9.1"
   gem 'awesome_print'
+  gem 'sextant'
 end
 
 gem 'jquery-rails'
