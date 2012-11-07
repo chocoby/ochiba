@@ -1,3 +1,4 @@
 class Camera < ActiveRecord::Base
-  attr_accessible :manufacturer, :name
+  belongs_to :manufacturer
+  attr_accessible :manufacturer_id, :name
 end
