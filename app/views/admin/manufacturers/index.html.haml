@@ -1,0 +1,19 @@
+%h1 Listing manufacturers
+
+%table
+  %tr
+    %th Name
+    %th
+    %th
+    %th
+
+  - @manufacturers.each do |manufacturer|
+    %tr
+      %td= manufacturer.name
+      %td= link_to 'Show', [:admin, manufacturer]
+      %td= link_to 'Edit', edit_admin_manufacturer_path(manufacturer)
+      %td= link_to 'Destroy', [:admin, manufacturer], method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Manufacturer', new_admin_manufacturer_path

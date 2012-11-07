@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @manufacturer.name
+
+= link_to 'Edit', edit_admin_manufacturer_path(@manufacturer)
+\|
+= link_to 'Back', admin_manufacturers_path
