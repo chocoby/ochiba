@@ -1,0 +1,16 @@
+= form_for @lens do |f|
+  - if @lens.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@lens.errors.count, "error")} prohibited this lens from being saved:"
+      %ul
+        - @lens.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :manufacturer
+    = f.text_field :manufacturer
+  .field
+    = f.label :name
+    = f.text_field :name
+  .actions
+    = f.submit 'Save'
