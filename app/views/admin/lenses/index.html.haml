@@ -1,0 +1,23 @@
+- model_class = Lens
+.page-header
+  %h1=t '.title', :default => model_class.model_name.human.pluralize
+%table.table.table-striped
+  %thead
+    %tr
+      %th= model_class.human_attribute_name(:id)
+      %th= model_class.human_attribute_name(:manufacturer_id)
+      %th= model_class.human_attribute_name(:name)
+      %th= model_class.human_attribute_name(:created_at)
+      %th=t '.actions', :default => t("helpers.actions")
+  %tbody
+    - @lenses.each do |lens|
+      %tr
+        %td= link_to lens.id, admin_lens_path(lens)
+        %td= lens.manufacturer.name
+        %td= lens.name
+        %td=l lens.created_at
+        %td
+          = link_to t('.edit', :default => t("helpers.links.edit")), edit_admin_lens_path(lens), :class => 'btn btn-mini'
+          = link_to t('.destroy', :default => t("helpers.links.destroy")), admin_lens_path(lens), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-mini btn-danger'
+
+= link_to t('.new', :default => t("helpers.links.new")), new_admin_lens_path, :class => 'btn btn-primary'
