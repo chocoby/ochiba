@@ -28,3 +28,4 @@ end
 gem 'jquery-rails'
 
 gem 'haml-rails', "~> 0.3.5"
+gem 'foreigner', "~> 1.2.1"
