@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121107013351) do
+ActiveRecord::Schema.define(:version => 20121108010430) do
 
   create_table "cameras", :force => true do |t|
     t.integer  "manufacturer_id"
@@ -20,10 +20,14 @@ ActiveRecord::Schema.define(:version => 20121107013351) do
     t.datetime "updated_at",                     :null => false
   end
 
+  add_index "cameras", ["manufacturer_id"], :name => "cameras_manufacturer_id_fk"
+
   create_table "manufacturers", :force => true do |t|
     t.string   "name",       :limit => 50, :null => false
     t.datetime "created_at",               :null => false
     t.datetime "updated_at",               :null => false
   end
+
+  add_foreign_key "cameras", "manufacturers", :name => "cameras_manufacturer_id_fk"
 
 end
