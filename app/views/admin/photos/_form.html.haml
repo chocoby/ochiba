@@ -1,0 +1,40 @@
+= form_for [:admin, @photo], :html => { :class => 'form-horizontal' } do |f|
+  .control-group
+    = f.label :flickr_photo_id, :class => 'control-label'
+    .controls
+      = f.text_field :flickr_photo_id, :class => 'text_field'
+  .control-group
+    = f.label :title, :class => 'control-label'
+    .controls
+      = f.text_field :title, :class => 'text_field'
+  .control-group
+    = f.label :camera_id, :class => 'control-label'
+    .controls
+      = f.collection_select :camera_id, Camera.all, :id, :name, include_blank: "選んでください"
+  .control-group
+    = f.label :lens_id, :class => 'control-label'
+    .controls
+      = f.collection_select :lens_id, Lens.all, :id, :name, include_blank: "選んでください"
+  .control-group
+    = f.label :taken_at, :class => 'control-label'
+    .controls
+      = f.datetime_select :taken_at, :class => 'datetime_select'
+  .control-group
+    = f.label :exposure, :class => 'control-label'
+    .controls
+      = f.text_field :exposure, :class => 'text_field'
+  .control-group
+    = f.label :aperture, :class => 'control-label'
+    .controls
+      = f.text_field :aperture, :class => 'text_field'
+  .control-group
+    = f.label :iso_speed, :class => 'control-label'
+    .controls
+      = f.text_field :iso_speed, :class => 'text_field'
+  .control-group
+    = f.label :photo_url, :class => 'control-label'
+    .controls
+      = f.text_field :photo_url, :class => 'text_field'
+  .form-actions
+    = f.submit nil, :class => 'btn btn-primary'
+    = link_to t('.cancel', :default => t("helpers.links.cancel")), admin_photos_path, :class => 'btn'

@@ -1,5 +1,4 @@
 Ochiba::Application.routes.draw do
-  resources :photos
 
   get '/login' => 'sessions#new', as: :new_user_session
   post '/login' => 'sessions#create', as: :user_session
@@ -11,5 +10,6 @@ Ochiba::Application.routes.draw do
     resources :manufacturers
     resources :cameras
     resources :lenses
+    resources :photos
   end
 end

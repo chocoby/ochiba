@@ -1,0 +1,37 @@
+- model_class = Photo
+.page-header
+  %h1=t '.title', :default => model_class.model_name.human.pluralize
+%table.table.table-striped
+  %thead
+    %tr
+      %th= model_class.human_attribute_name(:id)
+      %th= model_class.human_attribute_name(:flickr_photo_id)
+      %th= model_class.human_attribute_name(:title)
+      %th= model_class.human_attribute_name(:camera_id)
+      %th= model_class.human_attribute_name(:lens_id)
+      %th= model_class.human_attribute_name(:taken_at)
+      %th= model_class.human_attribute_name(:exposure)
+      %th= model_class.human_attribute_name(:aperture)
+      %th= model_class.human_attribute_name(:iso_speed)
+      %th= model_class.human_attribute_name(:photo_url)
+      %th= model_class.human_attribute_name(:created_at)
+      %th=t '.actions', :default => t("helpers.actions")
+  %tbody
+    - @photos.each do |photo|
+      %tr
+        %td= link_to photo.id, admin_photo_path(photo)
+        %td= photo.flickr_photo_id
+        %td= photo.title
+        %td= photo.camera.name
+        %td= photo.lens.name
+        %td= photo.taken_at
+        %td= photo.exposure
+        %td= photo.aperture
+        %td= photo.iso_speed
+        %td= photo.photo_url
+        %td=l photo.created_at
+        %td
+          = link_to t('.edit', :default => t("helpers.links.edit")), edit_admin_photo_path(photo), :class => 'btn btn-mini'
+          = link_to t('.destroy', :default => t("helpers.links.destroy")), admin_photo_path(photo), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-mini btn-danger'
+
+= link_to t('.new', :default => t("helpers.links.new")), new_admin_photo_path, :class => 'btn btn-primary'

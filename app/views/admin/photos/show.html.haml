@@ -1,0 +1,45 @@
+- model_class = Photo
+.page-header
+  %h1=t '.title', :default => model_class.model_name.human
+
+%p
+  %strong= model_class.human_attribute_name(:flickr_photo_id) + ':'
+  %br
+  = @photo.flickr_photo_id
+%p
+  %strong= model_class.human_attribute_name(:title) + ':'
+  %br
+  = @photo.title
+%p
+  %strong= model_class.human_attribute_name(:camera_id) + ':'
+  %br
+  = @photo.camera.name
+%p
+  %strong= model_class.human_attribute_name(:lens_id) + ':'
+  %br
+  = @photo.lens.name
+%p
+  %strong= model_class.human_attribute_name(:taken_at) + ':'
+  %br
+  = @photo.taken_at
+%p
+  %strong= model_class.human_attribute_name(:exposure) + ':'
+  %br
+  = @photo.exposure
+%p
+  %strong= model_class.human_attribute_name(:aperture) + ':'
+  %br
+  = @photo.aperture
+%p
+  %strong= model_class.human_attribute_name(:iso_speed) + ':'
+  %br
+  = @photo.iso_speed
+%p
+  %strong= model_class.human_attribute_name(:photo_url) + ':'
+  %br
+  = @photo.photo_url
+
+.form-actions
+  = link_to t('.back', :default => t("helpers.links.back")), admin_photos_path, :class => 'btn'
+  = link_to t('.edit', :default => t("helpers.links.edit")), edit_admin_photo_path(@photo), :class => 'btn'
+  = link_to t('.destroy', :default => t("helpers.links.destroy")), admin_photo_path(@photo), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-danger'
