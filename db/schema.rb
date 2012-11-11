@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121108010843) do
+ActiveRecord::Schema.define(:version => 20121111052033) do
 
   create_table "cameras", :force => true do |t|
     t.integer  "manufacturer_id"
@@ -37,8 +37,28 @@ ActiveRecord::Schema.define(:version => 20121108010843) do
     t.datetime "updated_at",               :null => false
   end
 
+  create_table "photos", :force => true do |t|
+    t.string   "flickr_photo_id", :limit => 50,  :null => false
+    t.string   "title",           :limit => 100
+    t.integer  "camera_id",                      :null => false
+    t.integer  "lens_id",                        :null => false
+    t.datetime "taken_at",                       :null => false
+    t.string   "exposure",        :limit => 10,  :null => false
+    t.string   "aperture",        :limit => 10,  :null => false
+    t.string   "iso_speed",       :limit => 10,  :null => false
+    t.string   "photo_url",                      :null => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
+  end
+
+  add_index "photos", ["camera_id"], :name => "photos_camera_id_fk"
+  add_index "photos", ["lens_id"], :name => "photos_lens_id_fk"
+
   add_foreign_key "cameras", "manufacturers", :name => "cameras_manufacturer_id_fk"
 
   add_foreign_key "lenses", "manufacturers", :name => "lenses_manufacturer_id_fk"
+
+  add_foreign_key "photos", "cameras", :name => "photos_camera_id_fk"
+  add_foreign_key "photos", "lenses", :name => "photos_lens_id_fk"
 
 end
