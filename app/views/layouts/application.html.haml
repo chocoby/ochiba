@@ -19,6 +19,12 @@
 
   %body
     .container
+      - if signed_in?
+        .row
+          .span9
+            = link_to 'Admin', admin_path
+            = link_to 'Logout', destroy_user_session_path, method: :delete
+
       .row
         = yield
 
