@@ -1,2 +1,5 @@
-- @photos.each do |photo|
-  = link_to image_tag(photo.photo_url), photo.photo_page_url
+.offset1.span10
+  #photostream
+    - @photos.each do |photo|
+      .photo
+        = link_to image_tag(photo.photo_url), photo.photo_page_url
