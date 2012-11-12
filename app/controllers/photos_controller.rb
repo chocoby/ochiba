@@ -2,6 +2,6 @@
 class PhotosController < ApplicationController
   # GET /
   def index
-    @photos = Photo.all
+    @photos = Photo.new_uploads.all
   end
 end
