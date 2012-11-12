@@ -19,10 +19,13 @@
 
   %body
     .container
-      - if signed_in?
-        .row
-          .span9
+      .row
+        .offset1.span3
+          %h2= link_to 'Ochiba', root_path
+        - if signed_in?
+          .offset4.span4
             = link_to 'Admin', admin_path
+            |
             = link_to 'Logout', destroy_user_session_path, method: :delete
 
       .row
