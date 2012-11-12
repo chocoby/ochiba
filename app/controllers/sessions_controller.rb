@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
 
     self.current_user = params[:username]
 
-    render text: 'ログインしました！'
+    redirect_to admin_path
   end
 
   # DELETE /logout
