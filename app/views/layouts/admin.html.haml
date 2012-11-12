@@ -30,6 +30,7 @@
               %li= link_to "Camera", admin_cameras_path
               %li= link_to "Lens", admin_lenses_path
               %li= link_to "Photos", admin_photos_path
+              %li= link_to "Logout", destroy_user_session_path, method: :delete
 
         .span9
           = bootstrap_flash
