@@ -11,6 +11,7 @@ class Photo < ActiveRecord::Base
   validates :aperture, presence: true
   validates :iso_speed, presence: true
   validates :photo_url, presence: true
+  validates :photo_page_url, presence: true
 
-  attr_accessible :aperture, :exposure, :flickr_photo_id, :iso_speed, :photo_url, :taken_at, :title, :camera_id, :lens_id
+  attr_accessible :aperture, :exposure, :flickr_photo_id, :iso_speed, :photo_url, :photo_page_url, :taken_at, :title, :camera_id, :lens_id
 end

@@ -35,6 +35,10 @@
     = f.label :photo_url, :class => 'control-label'
     .controls
       = f.text_field :photo_url, :class => 'text_field'
+  .control-group
+    = f.label :photo_page_url, :class => 'control-label'
+    .controls
+      = f.text_field :photo_page_url, :class => 'text_field'
   .form-actions
     = f.submit nil, :class => 'btn btn-primary'
     = link_to t('.cancel', :default => t("helpers.links.cancel")), admin_photos_path, :class => 'btn'
