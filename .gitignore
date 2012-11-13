@@ -16,3 +16,6 @@
 
 # Ignore auth settings
 /config/auth.yml
+
+# Ignore public/test/
+/public/test/*
