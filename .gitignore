@@ -17,5 +17,8 @@
 # Ignore auth settings
 /config/auth.yml
 
+# Ignore flickr settings
+/config/flickr.yml
+
 # Ignore public/test/
 /public/test/*
