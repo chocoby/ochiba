@@ -3,15 +3,28 @@ module Ochiba
   class Flickr
     def initialize(*params)
       params = params.extract_options!
-      photo_id = params[:photo_id]
-      @info = flickr.photos.getInfo(photo_id: photo_id)
+      @photo_id = params[:photo_id]
+
+      info
     end
 
     #
-    # 基本情報(getInfo)を取得
+    # 基本情報(getInfo)
     #
-    def get_info
-      @info
+    def info
+      @info ||= flickr.photos.getInfo(photo_id: @photo_id)
+    end
+
+    #
+    # EXIF(getExif)
+    #
+    def exif
+      unless @exif
+        exif = flickr.photos.getExif(photo_id: @info.id)
+        @exif = Ochiba::Flickr::Exif.new(exif.exif)
+      end
+
+      @exif
     end
 
     #

@@ -12,7 +12,9 @@ module Ochiba
           label = e.label.underscore.gsub(' ', '_').gsub(/\(|\)/, '')
           label == name
         end
+
         return nil unless data
+
         data.raw
       end
     end
