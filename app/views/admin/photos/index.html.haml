@@ -13,6 +13,7 @@
       %th= model_class.human_attribute_name(:exposure)
       %th= model_class.human_attribute_name(:aperture)
       %th= model_class.human_attribute_name(:iso_speed)
+      %th= model_class.human_attribute_name(:focal_length)
       %th= model_class.human_attribute_name(:photo_url)
       %th= model_class.human_attribute_name(:photo_page_url)
       %th= model_class.human_attribute_name(:created_at)
@@ -29,6 +30,7 @@
         %td= photo.exposure
         %td= photo.aperture
         %td= photo.iso_speed
+        %td= photo.focal_length
         %td= photo.photo_url
         %td= photo.photo_page_url
         %td=l photo.created_at

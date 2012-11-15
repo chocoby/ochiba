@@ -35,6 +35,10 @@
   %br
   = @photo.iso_speed
 %p
+  %strong= model_class.human_attribute_name(:focal_length) + ':'
+  %br
+  = @photo.focal_length
+%p
   %strong= model_class.human_attribute_name(:photo_url) + ':'
   %br
   = @photo.photo_url
