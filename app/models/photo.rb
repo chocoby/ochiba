@@ -30,15 +30,15 @@ class Photo < ActiveRecord::Base
 
     photo_page_url = info.urls.find { |u| u.type == 'photopage' }._content
 
-    self.title = info.title
+    self.title = info.title unless self.title.present?
     # TODO: camera
     # TODO: lens
-    self.taken_at = info.dates.taken
-    self.exposure = exif.exposure
-    self.aperture = exif.aperture
-    self.iso_speed = exif.iso_speed
-    self.focal_length = exif.focal_length.gsub('.0 mm', '')
-    self.photo_url = FlickRaw.url_b(info)
-    self.photo_page_url = photo_page_url
+    self.taken_at = info.dates.taken unless self.taken_at.present?
+    self.exposure = exif.exposure unless self.exposure.present?
+    self.aperture = exif.aperture unless self.aperture.present?
+    self.iso_speed = exif.iso_speed unless self.iso_speed.present?
+    self.focal_length = exif.focal_length.gsub('.0 mm', '') unless self.focal_length.present?
+    self.photo_url = FlickRaw.url_b(info) unless self.photo_url.present?
+    self.photo_page_url = photo_page_url unless self.photo_page_url.present?
   end
 end

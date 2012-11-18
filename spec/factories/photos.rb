@@ -12,5 +12,21 @@ FactoryGirl.define do
     iso_speed "MyString"
     focal_length "MyString"
     photo_url "MyString"
+    photo_page_url "MyString"
+
+    factory :photo_nil do
+      flickr_photo_id nil
+      title nil
+      camera nil
+      lens nil
+      taken_at nil
+      exposure nil
+      aperture nil
+      iso_speed nil
+      focal_length nil
+      photo_url nil
+      photo_page_url nil
+    end
   end
+
 end

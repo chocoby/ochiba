@@ -25,7 +25,7 @@ describe Photo do
 
       Ochiba::Flickr.stub(:new).and_return(@photo_data)
 
-      @photo = FactoryGirl.build(:photo, flickr_photo_id: 1234)
+      @photo = FactoryGirl.build(:photo_nil, flickr_photo_id: '8178992995')
       @photo.assign_exif
     end
 
