@@ -5,4 +5,11 @@ class Camera < ActiveRecord::Base
   validates :name, presence: true
 
   attr_accessible :manufacturer_id, :name
+
+  #
+  # メーカー名 + モデル名
+  #
+  def product_name
+    "#{self.manufacturer.name} #{self.name}"
+  end
 end

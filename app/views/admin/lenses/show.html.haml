@@ -7,13 +7,13 @@
   %br
   = @lens.manufacturer.name
 %p
-  %strong= model_class.human_attribute_name(:lens_id) + ':'
-  %br
-  = @lens.lens_id
-%p
   %strong= model_class.human_attribute_name(:name) + ':'
   %br
   = @lens.name
+%p
+  %strong= model_class.human_attribute_name(:lens_id) + ':'
+  %br
+  = @lens.lens_id
 
 .form-actions
   = link_to t('.back', :default => t("helpers.links.back")), admin_lenses_path, :class => 'btn'

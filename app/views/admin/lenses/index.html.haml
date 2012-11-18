@@ -6,8 +6,8 @@
     %tr
       %th= model_class.human_attribute_name(:id)
       %th= model_class.human_attribute_name(:manufacturer_id)
-      %th= model_class.human_attribute_name(:lens_id)
       %th= model_class.human_attribute_name(:name)
+      %th= model_class.human_attribute_name(:lens_id)
       %th= model_class.human_attribute_name(:created_at)
       %th=t '.actions', :default => t("helpers.actions")
   %tbody
@@ -15,8 +15,8 @@
       %tr
         %td= link_to lens.id, admin_lens_path(lens)
         %td= lens.manufacturer.name
-        %td= lens.lens_id
         %td= lens.name
+        %td= lens.lens_id
         %td=l lens.created_at
         %td
           = link_to t('.edit', :default => t("helpers.links.edit")), edit_admin_lens_path(lens), :class => 'btn btn-mini'

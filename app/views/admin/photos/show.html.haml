@@ -11,13 +11,13 @@
   %br
   = @photo.title
 %p
-  %strong= model_class.human_attribute_name(:camera_id) + ':'
+  %strong= model_class.human_attribute_name(:camera) + ':'
   %br
-  = @photo.camera.name
+  = @photo.camera.product_name
 %p
-  %strong= model_class.human_attribute_name(:lens_id) + ':'
+  %strong= model_class.human_attribute_name(:lens) + ':'
   %br
-  = @photo.lens.name
+  = @photo.lens.product_name
 %p
   %strong= model_class.human_attribute_name(:taken_at) + ':'
   %br

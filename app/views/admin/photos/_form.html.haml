@@ -10,11 +10,11 @@
   .control-group
     = f.label :camera_id, :class => 'control-label'
     .controls
-      = f.collection_select :camera_id, Camera.all, :id, :name, include_blank: "選んでください"
+      = f.collection_select :camera_id, Camera.all, :id, :product_name, include_blank: "選んでください"
   .control-group
     = f.label :lens_id, :class => 'control-label'
     .controls
-      = f.collection_select :lens_id, Lens.all, :id, :name, include_blank: "選んでください"
+      = f.collection_select :lens_id, Lens.all, :id, :product_name, include_blank: "選んでください"
   .control-group
     = f.label :taken_at, :class => 'control-label'
     .controls

@@ -4,13 +4,13 @@
     .controls
       = f.collection_select :manufacturer_id, Manufacturer.all, :id, :name, include_blank: "選んでください"
   .control-group
-    = f.label :lens_id, :class => 'control-label'
-    .controls
-      = f.text_field :lens_id, :class => 'text_field'
-  .control-group
     = f.label :name, :class => 'control-label'
     .controls
       = f.text_field :name, :class => 'text_field'
+  .control-group
+    = f.label :lens_id, :class => 'control-label'
+    .controls
+      = f.text_field :lens_id, :class => 'text_field'
   .form-actions
     = f.submit nil, :class => 'btn btn-primary'
     = link_to t('.cancel', :default => t("helpers.links.cancel")), admin_lenses_path, :class => 'btn'
