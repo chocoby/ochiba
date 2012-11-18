@@ -2,7 +2,8 @@
 
 FactoryGirl.define do
   factory :lens do
-    manufacturer nil
+    manufacturer
+    lens_id "MyString"
     name "MyString"
   end
 end

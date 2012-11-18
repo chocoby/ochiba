@@ -32,7 +32,6 @@ class Photo < ActiveRecord::Base
 
     self.title = info.title unless self.title.present?
     # TODO: camera
-    # TODO: lens
     self.taken_at = info.dates.taken unless self.taken_at.present?
     self.exposure = exif.exposure unless self.exposure.present?
     self.aperture = exif.aperture unless self.aperture.present?
@@ -40,5 +39,10 @@ class Photo < ActiveRecord::Base
     self.focal_length = exif.focal_length.gsub('.0 mm', '') unless self.focal_length.present?
     self.photo_url = FlickRaw.url_b(info) unless self.photo_url.present?
     self.photo_page_url = photo_page_url unless self.photo_page_url.present?
+
+    unless self.lens
+      lens = Lens.find_by_lens_id(exif.lens_id)
+      self.lens = lens if lens
+    end
   end
 end

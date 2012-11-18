@@ -23,6 +23,7 @@ class Admin::PhotosController < Admin::ApplicationController
   def create
     @photo = Photo.new(params[:photo])
 
+    @photo.assign_exif
     if @photo.save
       redirect_to [:admin, @photo], notice: 'Photo was successfully created.'
     else

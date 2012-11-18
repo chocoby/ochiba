@@ -4,6 +4,9 @@ require 'spec_helper'
 describe Photo do
   describe :assign_exif do
     before do
+      lens_id = '1234'
+      @lens = FactoryGirl.create(:lens, lens_id: lens_id)
+
       info = ActiveSupport::OrderedOptions.new
       info.title = '持桶女郎モミジ'
       info.dates = ActiveSupport::OrderedOptions.new
@@ -18,6 +21,7 @@ describe Photo do
       exif.aperture = '5.0'
       exif.iso_speed = '220'
       exif.focal_length = '200.0 mm'
+      exif.lens_id = lens_id
 
       @photo_data = ActiveSupport::OrderedOptions.new
       @photo_data.info = info
@@ -34,6 +38,7 @@ describe Photo do
     it { @photo.exposure.should eq @photo_data.exif.exposure }
     it { @photo.aperture.should eq @photo_data.exif.aperture }
     it { @photo.iso_speed.should eq @photo_data.exif.iso_speed }
+    it { @photo.lens.should eq @lens }
     it { @photo.focal_length.should eq '200' }
     it { @photo.photo_url.should eq FlickRaw.url_b(@photo_data.info) }
     it { @photo.photo_page_url.should eq @photo_data.info.urls[0]._content }
