@@ -10,6 +10,7 @@ FactoryGirl.define do
     exposure "MyString"
     aperture "MyString"
     iso_speed "MyString"
+    focal_length "MyString"
     photo_url "MyString"
   end
 end
