@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121115010010) do
+ActiveRecord::Schema.define(:version => 20121118074741) do
 
   create_table "cameras", :force => true do |t|
     t.integer  "manufacturer_id"
@@ -24,11 +24,13 @@ ActiveRecord::Schema.define(:version => 20121115010010) do
 
   create_table "lenses", :force => true do |t|
     t.integer  "manufacturer_id"
+    t.string   "lens_id",         :limit => 50
     t.string   "name",            :limit => 200, :null => false
     t.datetime "created_at",                     :null => false
     t.datetime "updated_at",                     :null => false
   end
 
+  add_index "lenses", ["lens_id"], :name => "index_lenses_on_lens_id"
   add_index "lenses", ["manufacturer_id"], :name => "lenses_manufacturer_id_fk"
 
   create_table "manufacturers", :force => true do |t|

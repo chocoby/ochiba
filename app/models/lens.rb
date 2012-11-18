@@ -4,5 +4,5 @@ class Lens < ActiveRecord::Base
   validates :manufacturer_id, presence: true
   validates :name, presence: true
 
-  attr_accessible :manufacturer_id, :name
+  attr_accessible :manufacturer_id, :lens_id, :name
 end
