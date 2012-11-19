@@ -9,9 +9,6 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
-  gem 'therubyracer', platforms: :ruby
-  gem "twitter-bootstrap-rails", "~> 2.1.6"
-  gem "less-rails", "~> 2.2.6"
 end
 
 group :development, :test do
@@ -26,6 +23,9 @@ group :development, :test do
   gem 'sextant'
 end
 
+gem "twitter-bootstrap-rails", "~> 2.1.6"
+gem 'therubyracer', platforms: :ruby
+gem "less-rails", "~> 2.2.6"
 gem 'jquery-rails'
 
 gem 'haml-rails', "~> 0.3.5"
