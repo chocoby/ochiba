@@ -16,9 +16,6 @@ class Photo < ActiveRecord::Base
 
   scope :new_uploads, order("id DESC")
 
-  attr_accessible :aperture, :exposure, :flickr_photo_id, :iso_speed, :focal_length,
-    :photo_url, :photo_page_url, :taken_at, :title, :camera_id, :lens_id
-
   #
   # Flickr から EXIF を取得しセットする
   #

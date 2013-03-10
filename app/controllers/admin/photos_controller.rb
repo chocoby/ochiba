@@ -21,7 +21,7 @@ class Admin::PhotosController < Admin::ApplicationController
 
   # POST /admin/photos
   def create
-    @photo = Photo.new(params[:photo])
+    @photo = Photo.new(photos_params)
 
     @photo.assign_exif
     if @photo.save
@@ -35,7 +35,7 @@ class Admin::PhotosController < Admin::ApplicationController
   def update
     @photo = Photo.find(params[:id])
 
-    if @photo.update_attributes(params[:photo])
+    if @photo.update_attributes(photos_params)
       redirect_to [:admin, @photo], notice: 'Photo was successfully updated.'
     else
       render action: "edit"
@@ -48,5 +48,14 @@ class Admin::PhotosController < Admin::ApplicationController
     @photo.destroy
 
     redirect_to admin_photos_url
+  end
+
+  private
+
+  def photos_params
+    params.require(:photo).permit(
+      :aperture, :exposure, :flickr_photo_id, :iso_speed, :focal_length,
+      :photo_url, :photo_page_url, :taken_at, :title, :camera_id, :lens_id
+    )
   end
 end

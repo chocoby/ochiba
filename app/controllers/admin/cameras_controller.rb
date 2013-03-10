@@ -21,7 +21,7 @@ class Admin::CamerasController < Admin::ApplicationController
 
   # POST /admin/cameras
   def create
-    @camera = Camera.new(params[:camera])
+    @camera = Camera.new(cameras_params)
 
     if @camera.save
       redirect_to [:admin, @camera], notice: 'Camera was successfully created.'
@@ -34,7 +34,7 @@ class Admin::CamerasController < Admin::ApplicationController
   def update
     @camera = Camera.find(params[:id])
 
-    if @camera.update_attributes(params[:camera])
+    if @camera.update_attributes(cameras_params)
       redirect_to [:admin, @camera], notice: 'Camera was successfully updated.'
     else
       render action: "edit"
@@ -47,5 +47,11 @@ class Admin::CamerasController < Admin::ApplicationController
     @camera.destroy
 
     redirect_to admin_cameras_url
+  end
+
+  private
+
+  def cameras_params
+    params.require(:camera).permit(:name, :manufacturer_id)
   end
 end

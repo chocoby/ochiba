@@ -1,4 +1,5 @@
-# coding: utf-8
+require 'ochiba/auth'
+
 class SessionsController < ApplicationController
   # GET /login
   def new

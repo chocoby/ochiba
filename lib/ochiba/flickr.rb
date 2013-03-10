@@ -1,4 +1,5 @@
-# coding: utf-8
+require 'ochiba/flickr/exif'
+
 module Ochiba
   class Flickr
     def initialize(*params)
