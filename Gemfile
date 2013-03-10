@@ -22,7 +22,7 @@ group :development, :test do
   gem 'shoulda-matchers', "~> 1.4.2"
   gem 'factory_girl_rails', "~> 4.2.1"
   gem 'growl-rspec', "~> 0.0.1"
-  gem 'database_cleaner', "~> 0.9.1"
+  gem 'database_cleaner', "~> 1.0.0.RC1"
   gem 'awesome_print', '~> 1.1.0'
   gem "rb-fsevent", "~> 0.9.3"
 end
