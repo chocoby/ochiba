@@ -42,10 +42,13 @@ module Ochiba
         settings[:secret] = ENV['OCHIBA_FLICKR_SECRET']
       else
         config_path = File.join(Rails.root, 'config', 'flickr.yml')
-        config = YAML.load(File.open(config_path))
 
-        settings[:key] = config['key']
-        settings[:secret] = config['secret']
+        if File.exists?(config_path)
+          config = YAML.load(File.open(config_path))
+
+          settings[:key] = config['key']
+          settings[:secret] = config['secret']
+        end
       end
 
       settings

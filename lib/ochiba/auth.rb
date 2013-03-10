@@ -40,11 +40,14 @@ module Ochiba::Auth
       settings[:password] = ENV['OCHIBA_PASSWORD']
     else
       config_path = File.join(Rails.root, 'config', 'auth.yml')
-      config = YAML.load(File.open(config_path))
 
-      settings[:salt] = config['salt']
-      settings[:username] = config['username']
-      settings[:password] = config['password']
+      if File.exists?(config_path)
+        config = YAML.load(File.open(config_path))
+
+        settings[:salt] = config['salt']
+        settings[:username] = config['username']
+        settings[:password] = config['password']
+      end
     end
 
     settings
