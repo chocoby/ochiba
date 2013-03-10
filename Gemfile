@@ -24,6 +24,7 @@ group :development, :test do
   gem 'database_cleaner', "~> 1.0.0.RC1"
   gem 'awesome_print', '~> 1.1.0'
   gem "rb-fsevent", "~> 0.9.3"
+  gem "spring", "~> 0.0.7"
 end
 
 gem "twitter-bootstrap-rails", "~> 2.2.6"
