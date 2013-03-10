@@ -2,6 +2,11 @@
 
 # Your secret key for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
+
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Ochiba::Application.config.secret_token = '4ef4ce00fc3bd91d99f1978f28725491d1897a9716508d1165a643c739882ea994376c9f27850d97efe7c767a85614f68555fa5fe608af05eacfbbe5aaad5c40'
+# You can use `rake secret` to generate a secure secret key.
+
+# Make sure your secret_key_base is kept private
+# if you're sharing your code publicly.
+Ochiba::Application.config.secret_key_base = 'b5435cc1253529800ee5d4e6502c0cc609323de741864783dccf1526fccbbd2315770c3e056398243a59eee4e4589cc662d984fe653b22f92563e9494fbc7fed'
