@@ -14,7 +14,7 @@ class Photo < ActiveRecord::Base
   validates :photo_url, presence: true
   validates :photo_page_url, presence: true
 
-  scope :new_uploads, order("id DESC")
+  scope :new_uploads, -> { order("id DESC") }
 
   #
   # Flickr から EXIF を取得しセットする
