@@ -2,35 +2,35 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
 
-gem 'mysql2'
-gem 'pg'
+gem 'mysql2', '~> 0.3.11'
+gem 'pg', '~> 0.14.1'
 
-gem 'thin'
+gem 'thin', '~> 1.5.0'
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'sass-rails',   '~> 3.2.6'
+  gem 'coffee-rails', '~> 3.2.2'
+  gem 'uglifier', '~> 1.3.0'
 end
 
 group :development, :test do
-  gem 'rspec-rails', "~> 2.11.4"
-  gem 'guard-spork', "~> 1.2.3"
-  gem 'guard-rspec', "~> 2.1.1"
-  gem 'shoulda-matchers', "~> 1.4.1"
-  gem 'factory_girl_rails', "~> 4.1.0"
+  gem 'rspec-rails', "~> 2.13.0"
+  gem 'guard-spork', "~> 1.5.0"
+  gem 'guard-rspec', "~> 2.5.0"
+  gem 'shoulda-matchers', "~> 1.4.2"
+  gem 'factory_girl_rails', "~> 4.2.1"
   gem 'growl-rspec', "~> 0.0.1"
   gem 'database_cleaner', "~> 0.9.1"
-  gem 'awesome_print'
-  gem 'sextant'
+  gem 'awesome_print', '~> 1.1.0'
+  gem "rb-fsevent", "~> 0.9.3"
 end
 
-gem "twitter-bootstrap-rails", "~> 2.1.6"
-gem 'therubyracer', platforms: :ruby
-gem "less-rails", "~> 2.2.6"
-gem 'jquery-rails'
+gem "twitter-bootstrap-rails", "~> 2.2.6"
+gem 'therubyracer', '~> 0.11.4', platforms: :ruby
+gem "less-rails", "~> 2.3.2"
+gem 'jquery-rails', '~> 2.2.1'
 
-gem 'haml-rails', "~> 0.3.5"
-gem 'foreigner', "~> 1.2.1"
+gem 'haml-rails', "~> 0.4"
+gem 'foreigner', "~> 1.4.0"
 gem 'kaminari', "~> 0.14.1"
 gem 'flickraw', "~> 0.9.6"
