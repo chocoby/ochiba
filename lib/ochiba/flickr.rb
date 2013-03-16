@@ -1,5 +1,3 @@
-require 'ochiba/flickr/exif'
-
 module Ochiba
   class Flickr
     def initialize(*params)

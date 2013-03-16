@@ -1,5 +1,3 @@
-require 'ochiba/auth'
-
 class SessionsController < ApplicationController
   # GET /login
   def new
