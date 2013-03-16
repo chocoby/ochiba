@@ -19,7 +19,7 @@ gem "turbolinks", "~> 1.0.0"
 
 group :development, :test do
   gem 'rspec-rails', "~> 2.13.0"
-  gem 'guard-rspec', "~> 2.5.0"
+  gem 'guard-rspec', "~> 2.5.1"
   gem 'shoulda-matchers', "~> 1.4.2"
   gem 'factory_girl_rails', "~> 4.2.1"
   gem 'growl-rspec', "~> 0.0.1"
