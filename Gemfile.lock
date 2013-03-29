@@ -56,9 +56,6 @@ GEM
     foreigner (1.4.0)
       activerecord (>= 3.0.0)
     growl (1.0.3)
-    growl-rspec (0.0.1)
-      growl
-      rspec
     guard (1.6.2)
       listen (>= 0.6.0)
       lumberjack (>= 1.0.2)
@@ -203,7 +200,7 @@ DEPENDENCIES
   factory_girl_rails (~> 4.2.1)
   flickraw (~> 0.9.6)
   foreigner (~> 1.4.0)
-  growl-rspec (~> 0.0.1)
+  growl (~> 1.0.3)
   guard-rspec (~> 2.5.1)
   haml-rails (~> 0.4)
   jquery-rails (~> 2.2.1)

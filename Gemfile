@@ -22,11 +22,11 @@ group :development, :test do
   gem 'guard-rspec', "~> 2.5.1"
   gem 'shoulda-matchers', "~> 1.5.4"
   gem 'factory_girl_rails', "~> 4.2.1"
-  gem 'growl-rspec', "~> 0.0.1"
   gem 'database_cleaner', "~> 1.0.0.RC1"
   gem 'awesome_print', '~> 1.1.0'
   gem "rb-fsevent", "~> 0.9.3"
   gem "spring", "~> 0.0.8"
+  gem "growl", "~> 1.0.3"
 end
 
 gem "twitter-bootstrap-rails", "~> 2.2.6"
