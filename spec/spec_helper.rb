@@ -16,8 +16,6 @@ RSpec.configure do |config|
 
   config.infer_base_class_for_anonymous_controllers = false
 
-  config.formatter = 'Growl::RSpec::Formatter'
-
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
   end
