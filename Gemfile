@@ -11,7 +11,7 @@ gem 'thin', '~> 1.5.0'
 
 group :assets do
   gem 'sass-rails',   '~> 4.0.0.beta1'
-  gem 'coffee-rails', '~> 4.0.0.beta1'
+  gem 'coffee-rails', '~> 4.0.0'
   gem 'uglifier', '~> 1.3.0'
 end
 
