@@ -86,7 +86,7 @@ GEM
     less-rails (2.3.3)
       actionpack (>= 3.1)
       less (~> 2.3.1)
-    libv8 (3.11.8.13)
+    libv8 (3.11.8.17)
     listen (1.0.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
