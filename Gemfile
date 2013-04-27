@@ -32,7 +32,7 @@ end
 
 gem "twitter-bootstrap-rails", "~> 2.2.6"
 gem 'therubyracer', '~> 0.11.4', platforms: :ruby
-gem "less-rails", "~> 2.3.2"
+gem "less-rails", "~> 2.3.3"
 gem 'jquery-rails', '~> 2.2.1'
 
 gem "haml", "~> 4.0.2"
