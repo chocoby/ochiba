@@ -170,7 +170,7 @@ GEM
     therubyracer (0.11.4)
       libv8 (~> 3.11.8.12)
       ref
-    thin (1.5.0)
+    thin (1.5.1)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
@@ -219,7 +219,7 @@ DEPENDENCIES
   shoulda-matchers (~> 2.0.0)
   spring (~> 0.0.8)
   therubyracer (~> 0.11.4)
-  thin (~> 1.5.0)
+  thin (~> 1.5.1)
   turbolinks (~> 1.1.0)
   twitter-bootstrap-rails (~> 2.2.6)
   uglifier (~> 2.0.1)
