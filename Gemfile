@@ -36,6 +36,6 @@ gem "less-rails", "~> 2.3.2"
 gem 'jquery-rails', '~> 2.2.1'
 
 gem 'haml-rails', "~> 0.4"
-gem 'foreigner', "~> 1.4.0"
+gem 'foreigner', "~> 1.4.1"
 gem 'kaminari', "~> 0.14.1"
 gem 'flickraw', "~> 0.9.6"
