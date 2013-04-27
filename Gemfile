@@ -21,7 +21,7 @@ group :development, :test do
   gem 'rspec-rails', "~> 2.13.1"
   gem "guard", "~> 1.8.0"
   gem 'guard-rspec', "~> 2.5.4"
-  gem 'shoulda-matchers', "~> 1.5.4"
+  gem 'shoulda-matchers', "~> 2.0.0"
   gem 'factory_girl_rails', "~> 4.2.1"
   gem 'database_cleaner', "~> 1.0.0.RC1"
   gem 'awesome_print', '~> 1.1.0'
