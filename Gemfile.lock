@@ -99,6 +99,7 @@ GEM
     minitest (4.7.5)
     multi_json (1.7.7)
     mysql2 (0.3.11)
+    newrelic_rpm (3.6.5.130)
     pg (0.15.1)
     polyglot (0.3.3)
     pry (0.9.12.2)
@@ -206,6 +207,7 @@ DEPENDENCIES
   kaminari (~> 0.14.1)
   less-rails (~> 2.3.3)
   mysql2 (~> 0.3.11)
+  newrelic_rpm
   pg (~> 0.15.1)
   rails (~> 4.0.0)
   rb-fsevent (~> 0.9.3)
