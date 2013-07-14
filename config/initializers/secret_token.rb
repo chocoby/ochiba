@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Ochiba::Application.config.secret_key_base = '94a7fc3ed1228a850043a547bea7c13b380df8a8799dc230a2bcacb3f655295825213450e388edf5e39f58046af190ad3381c98c4b1ba24eaa0728cf04ea114e'
+Ochiba::Application.config.secret_key_base = ENV['SECRET_KEY_BASE'] || '94a7fc3ed1228a850043a547bea7c13b380df8a8799dc230a2bcacb3f655295825213450e388edf5e39f58046af190ad3381c98c4b1ba24eaa0728cf04ea114e'
