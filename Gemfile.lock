@@ -188,7 +188,7 @@ GEM
       execjs
       railties (>= 3.1)
     tzinfo (0.3.37)
-    uglifier (2.0.1)
+    uglifier (2.1.2)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
 
@@ -222,4 +222,4 @@ DEPENDENCIES
   thin (~> 1.5.1)
   turbolinks (~> 1.1.1)
   twitter-bootstrap-rails (~> 2.2.6)
-  uglifier (~> 2.0.1)
+  uglifier (~> 2.1.2)
