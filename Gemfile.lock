@@ -183,9 +183,10 @@ GEM
       polyglot (>= 0.3.1)
     turbolinks (1.1.1)
       coffee-rails
-    twitter-bootstrap-rails (2.2.6)
+    twitter-bootstrap-rails (2.2.7)
       actionpack (>= 3.1)
       execjs
+      rails (>= 3.1)
       railties (>= 3.1)
     tzinfo (0.3.37)
     uglifier (2.1.2)
@@ -221,5 +222,5 @@ DEPENDENCIES
   therubyracer (~> 0.11.4)
   thin (~> 1.5.1)
   turbolinks (~> 1.1.1)
-  twitter-bootstrap-rails (~> 2.2.6)
+  twitter-bootstrap-rails (~> 2.2.7)
   uglifier (~> 2.1.2)

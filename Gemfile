@@ -30,7 +30,7 @@ group :development, :test do
   gem "growl", "~> 1.0.3"
 end
 
-gem "twitter-bootstrap-rails", "~> 2.2.6"
+gem "twitter-bootstrap-rails", "~> 2.2.7"
 gem 'therubyracer', '~> 0.11.4', platforms: :ruby
 gem "less-rails", "~> 2.3.3"
 gem 'jquery-rails', '~> 3.0.4'
