@@ -1,5 +1,7 @@
 # Ochiba
 
+[![Dependency Status](https://gemnasium.com/chocoby/ochiba.png)](https://gemnasium.com/chocoby/ochiba)
+
 A simple photo blog.
 
 ## Development
