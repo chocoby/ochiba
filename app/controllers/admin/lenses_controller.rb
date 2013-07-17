@@ -21,7 +21,7 @@ class Admin::LensesController < Admin::ApplicationController
 
   # POST /admin/lenses
   def create
-    @lens = Lens.new(lenses_params)
+    @lens = Lens.new(lens_params)
 
     if @lens.save
       redirect_to [:admin, @lens], notice: 'Lens was successfully created.'
@@ -34,7 +34,7 @@ class Admin::LensesController < Admin::ApplicationController
   def update
     @lens = Lens.find(params[:id])
 
-    if @lens.update_attributes(lenses_params)
+    if @lens.update_attributes(lens_params)
       redirect_to [:admin, @lens], notice: 'Lens was successfully updated.'
     else
       render action: "edit"
@@ -51,7 +51,7 @@ class Admin::LensesController < Admin::ApplicationController
 
   private
 
-  def lenses_params
+  def lens_params
     params.require(:lens).permit(:name, :manufacturer_id, :lens_id)
   end
 end

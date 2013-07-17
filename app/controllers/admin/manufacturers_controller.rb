@@ -21,7 +21,7 @@ class Admin::ManufacturersController < Admin::ApplicationController
 
   # POST /admin/manufacturers
   def create
-    @manufacturer = Manufacturer.new(manufacturers_params)
+    @manufacturer = Manufacturer.new(manufacturer_params)
 
     if @manufacturer.save
       redirect_to [:admin, @manufacturer], notice: 'Manufacturer was successfully created.'
@@ -34,7 +34,7 @@ class Admin::ManufacturersController < Admin::ApplicationController
   def update
     @manufacturer = Manufacturer.find(params[:id])
 
-    if @manufacturer.update_attributes(manufacturers_params)
+    if @manufacturer.update_attributes(manufacturer_params)
       redirect_to [:admin, @manufacturer], notice: 'Manufacturer was successfully updated.'
     else
       render action: :edit
@@ -51,7 +51,7 @@ class Admin::ManufacturersController < Admin::ApplicationController
 
   private
 
-  def manufacturers_params
+  def manufacturer_params
     params.require(:manufacturer).permit(:name)
   end
 end
