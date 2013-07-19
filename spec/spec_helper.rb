@@ -20,6 +20,10 @@ RSpec.configure do |config|
     DatabaseCleaner.strategy = :transaction
   end
 
+  config.before(:all) do
+    FactoryGirl.reload
+  end
+
   config.before(:each) do
     DatabaseCleaner.start
   end
