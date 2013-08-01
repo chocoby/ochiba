@@ -33,14 +33,14 @@ describe Photo do
       @photo.assign_exif
     end
 
-    it { @photo.title.should eq @photo_data.info.title }
-    it { @photo.taken_at.should eq @photo_data.info.dates.taken }
-    it { @photo.exposure.should eq @photo_data.exif.exposure }
-    it { @photo.aperture.should eq @photo_data.exif.aperture }
-    it { @photo.iso_speed.should eq @photo_data.exif.iso_speed }
-    it { @photo.lens.should eq @lens }
-    it { @photo.focal_length.should eq '200' }
-    it { @photo.photo_url.should eq FlickRaw.url_b(@photo_data.info) }
-    it { @photo.photo_page_url.should eq @photo_data.info.urls[0]._content }
+    it { expect(@photo.title).to eq @photo_data.info.title }
+    it { expect(@photo.taken_at).to eq @photo_data.info.dates.taken }
+    it { expect(@photo.exposure).to eq @photo_data.exif.exposure }
+    it { expect(@photo.aperture).to eq @photo_data.exif.aperture }
+    it { expect(@photo.iso_speed).to eq @photo_data.exif.iso_speed }
+    it { expect(@photo.lens).to eq @lens }
+    it { expect(@photo.focal_length).to eq '200' }
+    it { expect(@photo.photo_url).to eq FlickRaw.url_b(@photo_data.info) }
+    it { expect(@photo.photo_page_url).to eq @photo_data.info.urls[0]._content }
   end
 end

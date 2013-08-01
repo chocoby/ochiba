@@ -9,6 +9,6 @@ describe Camera do
       @expect_name = "#{@camera.manufacturer.name} #{@camera.name}"
     end
 
-    it { @camera.product_name.should eq @expect_name }
+    it { expect(@camera.product_name).to eq @expect_name }
   end
 end
