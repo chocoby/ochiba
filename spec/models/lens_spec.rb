@@ -9,6 +9,6 @@ describe Lens do
       @expect_name = "#{@lens.manufacturer.name} #{@lens.name}"
     end
 
-    it { @lens.product_name.should eq @expect_name }
+    it { expect(@lens.product_name).to eq @expect_name }
   end
 end
