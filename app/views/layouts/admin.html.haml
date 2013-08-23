@@ -15,7 +15,6 @@
     %link(href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72")
     %link(href="images/apple-touch-icon.png" rel="apple-touch-icon-precomposed")
 
-
   %body
 
     .container
@@ -29,6 +28,7 @@
               %li= link_to "Camera", admin_cameras_path
               %li= link_to "Lens", admin_lenses_path
               %li= link_to "Photos", admin_photos_path
+              %li.divider
               %li= link_to "Logout", destroy_user_session_path, method: :delete
 
         .span9
