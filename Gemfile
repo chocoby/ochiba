@@ -12,7 +12,7 @@ gem 'thin', '~> 1.5.1'
 group :assets do
   gem 'sass-rails',   '~> 4.0.0'
   gem 'coffee-rails', '~> 4.0.0'
-  gem 'uglifier', '~> 2.2.0'
+  gem 'uglifier', '~> 2.2.1'
 end
 
 gem "turbolinks", "~> 1.3.0"
