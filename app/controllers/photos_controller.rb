@@ -1,4 +1,3 @@
-# coding: utf-8
 class PhotosController < ApplicationController
   PHOTOSTREAM_PAGE_PER = 10
 
