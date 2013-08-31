@@ -16,9 +16,7 @@ class Photo < ActiveRecord::Base
 
   scope :new_uploads, -> { order("id DESC") }
 
-  #
   # Flickr から EXIF を取得しセットする
-  #
   def assign_exif
     photo_data = Ochiba::Flickr.new(photo_id: self.flickr_photo_id)
 

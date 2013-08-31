@@ -7,16 +7,12 @@ module Ochiba
       info
     end
 
-    #
     # 基本情報(getInfo)
-    #
     def info
       @info ||= flickr.photos.getInfo(photo_id: @photo_id)
     end
 
-    #
     # EXIF(getExif)
-    #
     def exif
       unless @exif
         exif = flickr.photos.getExif(photo_id: @info.id)
@@ -26,12 +22,10 @@ module Ochiba
       @exif
     end
 
-    #
     # API KEY を取得
     #
     # ENV に設定がある場合は ENV を優先し、
     # 設定が無い場合は設定ファイルから取得する
-    #
     def self.get_settings
       settings = {}
 

@@ -2,9 +2,7 @@
 require 'digest/sha1'
 
 module Ochiba::Auth
-  #
   # 認証を行う
-  #
   def self.authenticate(username, password)
     auth_settings = get_auth_settings
     login_password = get_password_hash(password)
@@ -15,9 +13,7 @@ module Ochiba::Auth
     true
   end
 
-  #
   # ハッシュ化されたパスワードを取得
-  #
   def self.get_password_hash(password)
     auth_settings = get_auth_settings
     salt = auth_settings[:salt]
@@ -25,12 +21,10 @@ module Ochiba::Auth
     Digest::SHA1.hexdigest(password + salt)
   end
 
-  #
   # 認証情報を取得
   #
   # ENV に設定がある場合は ENV を優先し、
   # 設定が無い場合は設定ファイルから取得する
-  #
   def self.get_auth_settings
     settings = {}
 
