@@ -1,11 +1,11 @@
 %h1 login
 
 - if signed_in?
-  ログイン中です。
-  = link_to 'ログアウト', destroy_user_session_path, method: :delete
+  Yout are already signed in.
+  = link_to 'Logout', destroy_user_session_path, method: :delete
 
 - else
-  ログインしてください。
+  Please sign in.
 
   = form_tag user_session_path do
     = text_field_tag :username
