@@ -5,4 +5,8 @@ class PhotosController < ApplicationController
   def index
     @photos = Photo.new_uploads.page(params[:page]).per(PHOTOSTREAM_PER_PAGE)
   end
+
+  # GET /photos/1
+  def show
+  end
 end
