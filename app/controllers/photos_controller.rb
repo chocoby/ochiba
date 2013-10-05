@@ -8,5 +8,6 @@ class PhotosController < ApplicationController
 
   # GET /photos/1
   def show
+    @photo = Photo.find(params[:id])
   end
 end
