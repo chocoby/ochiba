@@ -2,7 +2,7 @@
   #photostream
     - @photos.each do |photo|
       .photo
-        = link_to image_tag(photo.photo_url), photo.photo_page_url
+        = link_to image_tag(photo.photo_url), photo
 
   #paginator
     = paginate @photos, theme: :photostream
