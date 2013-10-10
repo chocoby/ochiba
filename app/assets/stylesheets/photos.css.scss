@@ -1,8 +1,21 @@
-div#photostream,
-div#photo-show {
+div#photostream {
   div.photo {
     margin-bottom: 100px;
     img {
+      display: block;
+      margin: auto;
+      border: 5px #000 solid;
+    }
+  }
+}
+
+div#photo-show {
+  div.photo {
+    margin-bottom: 50px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
       display: block;
       margin: auto;
       border: 5px #000 solid;
