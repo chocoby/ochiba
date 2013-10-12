@@ -24,7 +24,7 @@ group :development, :test do
   gem 'shoulda-matchers', "~> 2.3.0"
   gem 'factory_girl_rails', "~> 4.2.1"
   gem 'database_cleaner', "~> 1.1.1"
-  gem 'awesome_print', '~> 1.1.0'
+  gem 'awesome_print', '~> 1.2.0'
   gem "rb-fsevent", "~> 0.9.3"
   gem "spring", "~> 0.0.10"
   gem "growl", "~> 1.0.3"
