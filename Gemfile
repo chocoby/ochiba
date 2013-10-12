@@ -23,7 +23,7 @@ group :development, :test do
   gem 'guard-rspec', "~> 3.0.3"
   gem 'shoulda-matchers', "~> 2.3.0"
   gem 'factory_girl_rails', "~> 4.2.1"
-  gem 'database_cleaner', "~> 1.1.1"
+  gem 'database_cleaner', "~> 1.2.0"
   gem 'awesome_print', '~> 1.2.0'
   gem "rb-fsevent", "~> 0.9.3"
   gem "spring", "~> 0.0.10"
