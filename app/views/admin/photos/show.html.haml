@@ -1,15 +1,11 @@
 - model_class = Photo
 .page-header
-  %h1=t '.title', :default => model_class.model_name.human
+  %h1= @photo.title
 
 %p
   %strong= model_class.human_attribute_name(:flickr_photo_id) + ':'
   %br
   = @photo.flickr_photo_id
-%p
-  %strong= model_class.human_attribute_name(:title) + ':'
-  %br
-  = @photo.title
 %p
   %strong= model_class.human_attribute_name(:camera) + ':'
   %br
