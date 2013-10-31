@@ -7,7 +7,7 @@ gem 'rails', "~> 4.0.0"
 gem 'mysql2', '~> 0.3.13'
 gem 'pg', '~> 0.17.0'
 
-gem 'thin', '~> 1.6.0'
+gem 'thin', '~> 1.6.1'
 
 group :assets do
   gem 'sass-rails',   '~> 4.0.1'
