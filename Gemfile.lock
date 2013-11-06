@@ -66,7 +66,7 @@ GEM
     guard-rspec (4.0.3)
       guard (>= 2.1.1)
       rspec (~> 2.14)
-    haml (4.0.3)
+    haml (4.0.4)
       tilt
     haml-rails (0.4)
       actionpack (>= 3.1, < 4.1)
@@ -202,7 +202,7 @@ DEPENDENCIES
   growl (~> 1.0.3)
   guard (~> 2.2.2)
   guard-rspec (~> 4.0.3)
-  haml (~> 4.0.3)
+  haml (~> 4.0.4)
   haml-rails (~> 0.4)
   jquery-rails (~> 3.0.4)
   kaminari (~> 0.14.1)
