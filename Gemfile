@@ -4,7 +4,7 @@ ruby '2.0.0'
 
 gem 'rails', "~> 4.0.1"
 
-gem 'mysql2', '~> 0.3.13'
+gem 'mysql2', '~> 0.3.14'
 gem 'pg', '~> 0.17.0'
 
 gem 'thin', '~> 1.6.1'

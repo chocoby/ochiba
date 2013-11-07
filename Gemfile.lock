@@ -100,7 +100,7 @@ GEM
     mime-types (1.25)
     minitest (4.7.5)
     multi_json (1.8.2)
-    mysql2 (0.3.13)
+    mysql2 (0.3.14)
     newrelic_rpm (3.6.8.168)
     pg (0.17.0)
     polyglot (0.3.3)
@@ -207,7 +207,7 @@ DEPENDENCIES
   jquery-rails (~> 3.0.4)
   kaminari (~> 0.14.1)
   less-rails (~> 2.4.0)
-  mysql2 (~> 0.3.13)
+  mysql2 (~> 0.3.14)
   newrelic_rpm
   pg (~> 0.17.0)
   rails (~> 4.0.1)
