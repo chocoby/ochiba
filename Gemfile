@@ -29,6 +29,7 @@ group :development, :test do
   gem "spring", "~> 0.9.2"
   gem "spring-commands-rspec", '~> 1.0.1', require: false
   gem "growl", "~> 1.0.3"
+  gem "bullet", "~> 4.7.1"
 end
 
 gem "twitter-bootstrap-rails", "~> 2.2.7"
