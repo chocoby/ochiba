@@ -15,7 +15,7 @@ group :assets do
   gem 'uglifier', '~> 2.4.0'
 end
 
-gem "turbolinks", "~> 2.0.0"
+gem "turbolinks", "~> 2.1.0"
 
 group :development, :test do
   gem 'rspec-rails', "~> 2.14.0"
