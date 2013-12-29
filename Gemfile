@@ -18,9 +18,9 @@ end
 gem "turbolinks", "~> 2.1.0"
 
 group :development, :test do
-  gem 'rspec-rails', "~> 2.14.0"
+  gem 'rspec-rails', "~> 3.0.0.beta1"
   gem "guard", "~> 2.2.5"
-  gem 'guard-rspec', "~> 4.2.0"
+  gem 'guard-rspec', "~> 4.2.2"
   gem 'shoulda-matchers', "~> 2.4.0"
   gem 'factory_girl_rails', "~> 4.3.0"
   gem 'database_cleaner', "~> 1.2.0"
