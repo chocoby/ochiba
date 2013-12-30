@@ -27,7 +27,7 @@ describe Photo do
       @photo_data.info = info
       @photo_data.exif = exif
 
-      Ochiba::Flickr.stub(:new).and_return(@photo_data)
+      allow(Ochiba::Flickr).to receive(:new) { @photo_data }
 
       @photo = FactoryGirl.build(:photo_nil, flickr_photo_id: '8178992995')
       @photo.assign_exif
