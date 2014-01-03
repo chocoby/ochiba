@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :lens do
     manufacturer
-    lens_id "MyString"
-    name "MyString"
+    sequence(:lens_id) { |n| "#{n}" }
+    sequence(:name) { |n| "Lens #{n}" }
   end
 end

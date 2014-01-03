@@ -1,5 +1,5 @@
 FactoryGirl.define do
   factory :manufacturer do
-    name "MyString"
+    sequence(:name) { |n| "Manufacturer #{n}" }
   end
 end

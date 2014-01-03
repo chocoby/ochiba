@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :camera do
     manufacturer
-    name "MyString"
+    sequence(:name) { |n| "Camera #{n}" }
   end
 end

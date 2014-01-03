@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :photo do
-    flickr_photo_id "MyString"
-    title "MyString"
+    sequence(:flickr_photo_id) { |n| "#{n}" }
+    sequence(:title) { |n| "Photo #{n}" }
     camera
     lens
     taken_at "2012-11-11 14:20:33"
