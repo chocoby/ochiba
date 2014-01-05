@@ -2,13 +2,9 @@ require 'spec_helper'
 
 describe Camera do
   describe :product_name do
-    before do
-      @manufacturer = FactoryGirl.create(:manufacturer)
-      @camera = FactoryGirl.create(:camera, manufacturer: @manufacturer)
+    let(:camera) { FactoryGirl.create(:camera) }
+    let(:expected_name) { "#{camera.manufacturer.name} #{camera.name}" }
 
-      @expect_name = "#{@camera.manufacturer.name} #{@camera.name}"
-    end
-
-    it { expect(@camera.product_name).to eq @expect_name }
+    it { expect(camera.product_name).to eq expected_name }
   end
 end
