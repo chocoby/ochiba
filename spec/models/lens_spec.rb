@@ -2,13 +2,9 @@ require 'spec_helper'
 
 describe Lens do
   describe :product_name do
-    before do
-      @manufacturer = FactoryGirl.create(:manufacturer)
-      @lens = FactoryGirl.create(:lens, manufacturer: @manufacturer)
+    let(:lens) { FactoryGirl.create(:lens) }
+    let(:expected_name) { "#{lens.manufacturer.name} #{lens.name}" }
 
-      @expect_name = "#{@lens.manufacturer.name} #{@lens.name}"
-    end
-
-    it { expect(@lens.product_name).to eq @expect_name }
+    it { expect(lens.product_name).to eq expected_name }
   end
 end
