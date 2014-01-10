@@ -39,7 +39,7 @@ gem 'therubyracer', '~> 0.12.0', platforms: :ruby
 gem "less-rails", "~> 2.4.0"
 gem 'jquery-rails', '~> 3.0.4'
 
-gem "haml", "~> 4.0.4"
+gem "haml", "~> 4.0.5"
 gem 'haml-rails', "~> 0.5.3"
 gem 'foreigner', "~> 1.6.0"
 gem 'kaminari', "~> 0.15.0"
