@@ -33,34 +33,34 @@ describe Ochiba::Flickr::Exif do
   end
 
   describe :hoge do
-    it { @exif.hoge.should be_nil }
+    it { expect(@exif.hoge).to be_nil }
   end
 
   describe :make do
-    it { @exif.make.should eq @make }
+    it { expect(@exif.make).to eq @make }
   end
 
   describe :exposure do
-    it { @exif.exposure.should eq @exposure }
+    it { expect(@exif.exposure).to eq @exposure }
   end
 
   describe :aperture do
-    it { @exif.aperture.should eq @aperture }
+    it { expect(@exif.aperture).to eq @aperture }
   end
 
   describe :iso_speed do
-    it { @exif.iso_speed.should eq @iso_speed }
+    it { expect(@exif.iso_speed).to eq @iso_speed }
 
   describe :date_and_time_original do
-    it { @exif.date_and_time_original.should eq @date_and_time_original }
+    it { expect(@exif.date_and_time_original).to eq @date_and_time_original }
   end
 
   describe :exposure_bias do
-    it { @exif.exposure_bias.should eq @exposure_bias }
+    it { expect(@exif.exposure_bias).to eq @exposure_bias }
   end
 
   describe :focal_legth do
-    it { @exif.focal_length.should eq @focal_length }
+    it { expect(@exif.focal_length).to eq @focal_length }
   end
  end
 end
