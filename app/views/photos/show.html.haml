@@ -1,5 +1,5 @@
 #photo-show
   .photo
-    = image_tag(@photo.photo_url)
+    = image_tag @photo.photo_url
 
   %p= link_to 'Flickr', @photo.photo_page_url
