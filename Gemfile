@@ -45,4 +45,4 @@ gem 'foreigner', "~> 1.6.1"
 gem 'kaminari', "~> 0.15.1"
 gem 'flickraw', "~> 0.9.7"
 
-gem 'newrelic_rpm', '~> 3.7.1.182'
+gem 'newrelic_rpm', '~> 3.7.1.188'
