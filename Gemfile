@@ -35,7 +35,7 @@ group :development, :test do
 end
 
 gem "twitter-bootstrap-rails", "~> 2.2.7"
-gem 'therubyracer', '~> 0.12.0', platforms: :ruby
+gem 'therubyracer', '~> 0.12.1', platforms: :ruby
 gem "less-rails", "~> 2.4.0"
 gem 'jquery-rails', '~> 3.1.0'
 
