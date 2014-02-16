@@ -29,7 +29,7 @@ GEM
     atomic (1.1.14)
     awesome_print (1.2.0)
     builder (3.1.4)
-    bullet (4.7.1)
+    bullet (4.8.0)
       activesupport
       uniform_notifier (>= 1.4.0)
     capybara (2.2.1)
@@ -224,7 +224,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print (~> 1.2.0)
-  bullet (~> 4.7.1)
+  bullet (~> 4.8.0)
   capybara (~> 2.2.1)
   coffee-rails (~> 4.0.1)
   database_cleaner (~> 1.2.0)
