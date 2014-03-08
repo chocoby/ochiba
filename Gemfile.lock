@@ -193,7 +193,7 @@ GEM
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
-    thin (1.6.1)
+    thin (1.6.2)
       daemons (>= 1.0.9)
       eventmachine (>= 1.0.0)
       rack (>= 1.0.0)
@@ -252,7 +252,7 @@ DEPENDENCIES
   spring (~> 1.1.2)
   spring-commands-rspec (~> 1.0.1)
   therubyracer (~> 0.12.1)
-  thin (~> 1.6.1)
+  thin (~> 1.6.2)
   turbolinks (~> 2.2.1)
   twitter-bootstrap-rails (~> 2.2.7)
   uglifier (~> 2.4.0)
