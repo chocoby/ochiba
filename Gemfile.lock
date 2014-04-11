@@ -206,7 +206,7 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    turbolinks (2.2.1)
+    turbolinks (2.2.2)
       coffee-rails
     twitter-bootstrap-rails (2.2.8)
       actionpack (>= 3.1)
@@ -254,6 +254,6 @@ DEPENDENCIES
   spring-commands-rspec (~> 1.0.1)
   therubyracer (~> 0.12.1)
   thin (~> 1.6.2)
-  turbolinks (~> 2.2.1)
+  turbolinks (~> 2.2.2)
   twitter-bootstrap-rails (~> 2.2.7)
   uglifier (~> 2.5.0)
