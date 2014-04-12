@@ -43,6 +43,6 @@ gem "haml", "~> 4.0.5"
 gem 'haml-rails', "~> 0.5.3"
 gem 'foreigner', "~> 1.6.1"
 gem 'kaminari', "~> 0.15.1"
-gem 'flickraw', "~> 0.9.7"
+gem 'flickraw', "~> 0.9.8"
 
 gem 'newrelic_rpm', '~> 3.7.3.204'
