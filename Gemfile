@@ -10,7 +10,7 @@ gem 'pg', '~> 0.17.1'
 gem 'thin', '~> 1.6.2'
 
 group :assets do
-  gem 'sass-rails',   '~> 4.0.2'
+  gem 'sass-rails',   '~> 4.0.3'
   gem 'coffee-rails', '~> 4.0.1'
   gem 'uglifier', '~> 2.5.0'
 end
