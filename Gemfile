@@ -28,7 +28,7 @@ group :development, :test do
   gem 'awesome_print', '~> 1.2.0'
   gem "rb-fsevent", "~> 0.9.3"
   gem "spring", "~> 1.1.2"
-  gem "spring-commands-rspec", '~> 1.0.1', require: false
+  gem "spring-commands-rspec", '~> 1.0.2', require: false
   gem "growl", "~> 1.0.3"
   gem "bullet", "~> 4.8.0"
   gem "capybara", "~> 2.2.1"
