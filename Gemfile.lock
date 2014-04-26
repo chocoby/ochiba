@@ -149,7 +149,7 @@ GEM
       rspec-core (= 3.0.0.beta2)
       rspec-expectations (= 3.0.0.beta2)
       rspec-mocks (= 3.0.0.beta2)
-    rspec-collection_matchers (0.0.3)
+    rspec-collection_matchers (0.0.4)
       rspec-expectations (>= 2.99.0.beta1)
     rspec-core (3.0.0.beta2)
       rspec-support (= 3.0.0.beta2)
