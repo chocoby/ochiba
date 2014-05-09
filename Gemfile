@@ -34,7 +34,7 @@ group :development, :test do
   gem "capybara", "~> 2.2.1"
 end
 
-gem "twitter-bootstrap-rails", "~> 2.2.7"
+gem "twitter-bootstrap-rails", "~> 2.2.8"
 gem 'therubyracer', '~> 0.12.1', platforms: :ruby
 gem "less-rails", "~> 2.5.0"
 gem 'jquery-rails', '~> 3.1.0'

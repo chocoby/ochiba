@@ -253,5 +253,5 @@ DEPENDENCIES
   therubyracer (~> 0.12.1)
   thin (~> 1.6.2)
   turbolinks (~> 2.2.2)
-  twitter-bootstrap-rails (~> 2.2.7)
+  twitter-bootstrap-rails (~> 2.2.8)
   uglifier (~> 2.5.0)
