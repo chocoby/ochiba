@@ -27,7 +27,7 @@ group :development, :test do
   gem 'database_cleaner', "~> 1.2.0"
   gem 'awesome_print', '~> 1.2.0'
   gem "rb-fsevent", "~> 0.9.3"
-  gem "spring", "~> 1.1.2"
+  gem "spring", "~> 1.1.3"
   gem "spring-commands-rspec", '~> 1.0.2', require: false
   gem "growl", "~> 1.0.3"
   gem "bullet", "~> 4.9.0"
