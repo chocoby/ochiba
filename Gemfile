@@ -31,7 +31,7 @@ group :development, :test do
   gem "spring-commands-rspec", '~> 1.0.2', require: false
   gem "growl", "~> 1.0.3"
   gem "bullet", "~> 4.9.0"
-  gem "capybara", "~> 2.2.1"
+  gem "capybara", "~> 2.3.0"
 end
 
 gem "twitter-bootstrap-rails", "~> 2.2.8"
