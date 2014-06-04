@@ -96,7 +96,7 @@ GEM
       actionpack (>= 3.1)
       less (~> 2.5.0)
     libv8 (3.16.14.3)
-    listen (2.7.5)
+    listen (2.7.6)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
